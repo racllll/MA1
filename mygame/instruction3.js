@@ -22,7 +22,7 @@ class instruction3 extends Phaser.Scene {
             
         spaceDown.on('down', function(){
         console.log("Spacebar pressed, goto lvl1task");
-        this.scene.start("level1");
+        this.scene.start("lvl1task");
         }, this );
     
     }
