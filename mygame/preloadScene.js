@@ -16,7 +16,7 @@ class preloadScene extends Phaser.Scene {
         this.load.image("youwon","assets/youwon.png")
 
         this.load.image("level2", "assets/1_Generic_32x32.png");
-        this.load.image("bedroom", "assets/4_BedRoom_32x32.png");
+        this.load.image("bedroom", "assets/4_Bedroom_32x32.png");
         this.load.image("bedroom2", "assets/Room_Builder_32x32.png");
 
         this.load.image("level3", "assets/1_Generic_32x32.png");
@@ -36,10 +36,10 @@ class preloadScene extends Phaser.Scene {
 
     create() {
 
-        // this.music = this.sound.add("bgmusic", { loop: true }).setVolume(0.06);
-        // // this.music = this.sound.add("preloadmusic",{loop: true}).setVolume(0.06);
+        this.music = this.sound.add("bgmusic", { loop: true }).setVolume(0.06);
+        // this.music = this.sound.add("preloadmusic",{loop: true}).setVolume(0.06);
 
-        // this.music.play();
+        this.music.play();
 
 
 

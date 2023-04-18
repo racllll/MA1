@@ -116,6 +116,12 @@ class level2 extends Phaser.Scene {
         })
 
         this.player.setCollideWorldBounds(true);//don't go out of the the this.map
+        
+
+
+        this.physics.world.bounds.width = this.groundLayer.width
+        this.physics.world.bounds.height = this.groundLayer.height
+        
 
         // // create the arrow keys
         this.cursors = this.input.keyboard.createCursorKeys();

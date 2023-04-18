@@ -128,6 +128,14 @@ class level4 extends Phaser.Scene {
             null,
             this
         );
+
+        this.player.setCollideWorldBounds(true);//don't go out of the the this.map
+        
+
+
+        this.physics.world.bounds.width = this.groundLayer.width
+        this.physics.world.bounds.height = this.groundLayer.height
+
         this.physics.add.overlap(this.map, this.player,this.collectmap, null, this);  
         this.physics.add.overlap(this.map2, this.player,this.collectmap, null, this);    
         this.physics.add.overlap(this.map3, this.player,this.collectmap, null, this);    

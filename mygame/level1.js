@@ -5,6 +5,10 @@ class level1 extends Phaser.Scene {
         this.collectedkey = 0
         this.potioncollected = 0
     }
+    init(data) {
+        this.player = data.player
+        this.inventory = data.inventory
+    }
 
     preload() {
         //step1.load Json
@@ -73,6 +77,7 @@ class level1 extends Phaser.Scene {
 
 
         this.cameras.main.startFollow(this.player);
+        this.player.setCollideWorldBounds(true);
 
         //collision
         // this.itemLayer2.setCollisionByProperty({ pillars: true });
