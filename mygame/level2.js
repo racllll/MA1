@@ -22,14 +22,14 @@ class level2 extends Phaser.Scene {
 
         // //step2: Preload any images 
         this.load.image("level2", "assets/1_Generic_32x32.png");
-        this.load.image("bedroom", "assets/4_BedRoom_32x32.png");
+        this.load.image("bedroom", "assets/4_Bedroom_32x32.png");
         this.load.image("bedroom2", "assets/Room_Builder_32x32.png");
         this.load.image("map", "assets/map.png");
 
 
         //load heart
         this.load.image("heart", "assets/heart.png");
-        // this.load.image("map", "assets/map.png");
+        // this.load.image("map", "assets/map.png"); s
 
         this.load.audio("hit", "assets/hitsound.mp3");
         this.load.audio("collect", "assets/collectsound.ogg");
