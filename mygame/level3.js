@@ -89,10 +89,16 @@ class level3 extends Phaser.Scene {
         this.itemLayer2.setCollisionByExclusion(-1, true)
 
         this.player.setCollideWorldBounds(true);//don't go out of the the this.map
+      
+        
+
+
+        this.physics.world.bounds.width = this.groundLayer.width
+        this.physics.world.bounds.height = this.groundLayer.height
         this.physics.add.collider(this.player, this.itemLayer2);
     
 
-        this.player.setCollideWorldBounds(true);
+      
 
         // this.time.addEvent({
         //     delay: 1000,

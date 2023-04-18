@@ -81,7 +81,8 @@ class level1 extends Phaser.Scene {
 
         //collision
         // this.itemLayer2.setCollisionByProperty({ pillars: true });
-
+        this.physics.world.bounds.width = this.groundLayer.width
+        this.physics.world.bounds.height = this.groundLayer.height
         this.physics.add.collider(this.itemLayer2, this.player);
         this.player.setCollideWorldBounds(true);//don't go out of the the this.map
 

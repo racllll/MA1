@@ -14,6 +14,7 @@ class instruction1 extends Phaser.Scene {
 
     create() {
         this.game.sound.stopAll()
+
         this.sound.add('bgmusic').setVolume(0.06).setLoop(true).play()
  
         this.add.image(0, 0, 'instruction1').setOrigin(0, 0);
